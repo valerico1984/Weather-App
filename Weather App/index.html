@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Averigua el clima de tu ciudad</title>
+		<link rel="stylesheet" href="./CSS/style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="shortcut icon"
+			href="./images/favicon.png"
+			type="image/x-icon"
+		/>
+	</head>
+	<body>
+		<div class="container-despejado" id="container">
+			<section class="dataCity">
+				<form id="city">
+					<input
+						type="text"
+						id="cityInput"
+						placeholder="Ingresa la ciudad"
+					/>
+					<button type="submit" id="submit"></button>
+				</form>
+			</section>
+			<section class="numberTemp">
+				<div class="degrees">
+					<div id="numberDegree"></div>
+					<div class="degree">ºC</div>
+				</div>
+
+				<div class="description">
+					<div id="iconTemp"></div>
+					<div id="descriptionTemp"></div>
+					<div id="city_actual"></div>
+				</div>
+			</section>
+			<section class="min_max">
+				<div id="minTemp">
+					<small>Temp. Mínima </small><span id="min"></span>°C
+				</div>
+				<div id="maxTemp">
+					<small>Temp. Máxima </small><span id="max"></span>°C
+				</div>
+			</section>
+		</div>
+		<script src="./js/app.js"></script>
+	</body>
+</html>
